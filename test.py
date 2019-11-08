@@ -6,8 +6,10 @@ b=2
 
 c=a+b
 
-d=2b+c
+d=2b*c
 
-print(d)
+e = d-c
+
+print(e)
 
 
