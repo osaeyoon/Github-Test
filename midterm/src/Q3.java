@@ -1,0 +1,16 @@
+
+
+public class Q3 {
+	public static int getCRT(int p1, int p2, int r1, int r2) {
+		int result = -1;
+		for (int i = 0; i < p1 * p2; i++) {
+			// fill here!
+			if (r1 == i % p1 && r2 == i % p2)
+				result = i;		
+		}
+		return result;
+	}
+	public static void main(String[] args) {
+		System.out.println(getCRT(5, 7, 3, 4)); // 18
+	}
+}
