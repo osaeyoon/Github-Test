@@ -8,21 +8,20 @@ class Currency {
 	public Currency(double initial_amount) {
 		// initial_amount is given in won 
 		// fill here! 
-		if (initial_amount > 0) {
-			won = initial_amount;
-			dollars = initial_amount * 0.001;
-			yen = initial_amount * 0.1;
-		}
-		else {
-			won = 0; dollars = 0; yen = 0;
-		}
+		if (initial_amount > 0) won = initial_amount;
+		else won = 0;		
+
+		dollars = initial_amount * 0.001;
+		yen = initial_amount * 0.1;
 	}
+	
 	public Currency add(Currency other) {
 		// fill here!
 		double new_amount;
 		new_amount = won + other.getWon();
 		Currency result = new Currency(new_amount);
 		return result;
+		//return new Currency(this.won + other.getWon());
 	}
 	public double getDollars() {
 		// fill here!
