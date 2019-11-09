@@ -4,7 +4,8 @@
 public class Q4 {
 	public static String toKary(int n, int k) {
 		if (n < k) return "" + n;
-		else return toKary(n/k, k) + n % k;
+		//"" + n : int n을 문자열로 바꿔준다.
+		else return "" toKary(n/k, k) + n % k;
 		// fill here!
 		
 	}
